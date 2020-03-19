@@ -1,12 +1,11 @@
-class 'Complex'
-    
+class Complexnum
     def initialize(real, imaginary)
         @real = Float(real)
         @imaginary = Float(imaginary)
     end
 
     def to_s
-        String(real + i * imaginary)
+        String(String(real) + ' + i * ' + String(imaginary))
     end
     def real
         @real
