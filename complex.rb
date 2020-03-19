@@ -7,6 +7,9 @@ class Complexnum
     def to_s
         String(String(real) + ' + i * ' + String(imaginary))
     end
+    def add(ad)
+        Complexnum.new(@real + ad.real, @imaginary + ad.imaginary)
+    end
     def real
         @real
     end
